@@ -1,0 +1,21 @@
+name: Send Test Message to Hookdeck
+
+on:
+  schedule:
+    # Run every hour (you can change this to fit your needs)
+   - cron: '* * * * *'
+
+jobs:
+  send-message:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Send test message to Hookdeck
+      run: |
+        curl -X POST \
+        -H "Content-Type: application/json" \
+        -d '{
+          "username": "Test Bot",
+          "content": "This is a **Test Message** to keep Hookdeck active!"
+        }' \
+        https://hkdk.events/opg988b9wwdqda
