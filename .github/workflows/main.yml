@@ -2,8 +2,8 @@ name: Send Test Message to Hookdeck
 
 on:
   schedule:
-    # Run every hour (you can change this to fit your needs)
-   - cron: '* * * * *'
+    - cron: '*/5 * * * *'
+
 
 jobs:
   send-message:
