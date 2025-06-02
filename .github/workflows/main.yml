@@ -15,7 +15,7 @@ jobs:
         curl -X POST \
         -H "Content-Type: application/json" \
         -d '{
-          "username": "Test Bot",
-          "content": "This is a **Test Message** to keep Hookdeck active!"
+          "username": "Report Bot",
+          "content": "Make sure to **REPORT** any Bug from the game!"
         }' \
         https://hkdk.events/opg988b9wwdqda
